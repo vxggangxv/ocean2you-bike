@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<style>
+		body {
+			margin: 20px auto;
+			padding: 0;
+			width: 600px;
+			background: #164363;
+		}
+
+		.ashow {
+			width: 500px;
+			height: 333px;
+			border: 2px solid #ff6a00;
+			background: #21689b;
+		}
+
+		.ashow img {
+			position: absolute;
+			width: 500px;
+			height: 333px;
+		}
+
+		.ashow .active {
+			z-index: 1;
+		}
+	</style>
+
+	<script>
+		//변수 선언
+		var showImg, nextImg;
+
+		//현재 이미지에서 다음 이미지로 상태를 변경하는 함수 정의
+		function auto() {
+			showImg = $('.ashow img:eq(0)');
+			nextImg = $('.ashow img:eq(1)');
+			nextImg.addClass('active');
+
+			nextImg.css('opacity', '0')
+				.animate({
+					opacity: 1
+				}, 1500, function() {
+					$('.ashow').append(showImg);
+					showImg.removeClass('active');
+				});
+		}
+
+		//2초 간격으로 함수 호출(실행)
+		$(function() {
+			setInterval('auto()', 2000);
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+	<div class="ashow">
+		<img class="active" src="https://placeimg.com/320/100/any">
+		<img src="https://placeimg.com/320/100/grayscale">
+		<img src="https://placeimg.com/320/100/sepia">
+	</div>
+
+
+</body>
+
+</html>
