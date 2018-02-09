@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>오션투유전동바이크</title>
+
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+<!--
+	<link rel="stylesheet" type="text/css" href="http://static.ocean2you-bike.co.kr/css/common.css">
+	<link rel="stylesheet" type="text/css" href="http://static.ocean2you-bike.co.kr/css/intro/init.css">
+-->
+	<link rel="stylesheet" type="text/css" href="../../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/contents/init.css">
+
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+	<!--	<script src="http://static.ocean2you-bike.co.kr/js/common.js"></script>-->
+	<script src="../../static/js/common.js"></script>
+	<script src="../../static/js/contents/init.js"></script>
+
+	<script>
+		WebFont.load({
+			custom: {
+				families: ['Nanum Gothic', 'Noto Sans KR'],
+				urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css', 'http://fonts.googleapis.com/earlyaccess/notosanskr.css']
+			}
+		});
+	</script>
+
+	<!--[if lt IE 9]>
+	
+		<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		var navi = {
+			move: function(id) {
+				var num = $(id).offset().top - $("#gnb-header").height() - 50;
+				$("html, body").animate({
+					scrollTop: num
+				}, 900, 'easeInQuart');
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<h1 class="hidden">오션투유전동바이크</h1>
+
+	<div id="bike-wrap">
+		<header class="header" id="gnb-header">
+			<div class="hd-area clr">
+				<div class="glb clr">
+					<a href="#" class="gLogo"><img src="../../img/logo.png" alt="전동바이크로고"></a>
+
+					<nav class="gNav hidden-xs">
+						<ul class="gnb clr">
+							<li class="nth-1 on">
+								<a href="javascript:;" onclick="navi.move('#about-sec')">전동바이크</a>
+							</li>
+							<!--180118 객실서브 메튜 변경-->
+							<li class="nth-2">
+								<a href="javascript:;" onclick="navi.move('#guide-sec')">이용안내</a>
+							</li>
+							<li class="nth-3">
+								<a href="javascript:;" onclick="navi.move('#course-sec')">추천코스</a>
+							</li>
+							<li class="nth-4">
+								<a href="javascript:;" onclick="navi.move('#contact-sec')">오시는길</a>
+							</li>
+							<li class="nth-5">
+								<a class="f-bd" href="../reservation/index.html">예약확인</a>
+							</li>
+							<li class="nth-6">
+								<a class="f-bd" href="../reservation/index.html">객실예약</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button type="button" class="navTab-m show-xs" id="navTab-m">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<nav class="gNav-m" id="gNav-m">
+						<ul class="gnb-m clr">
+							<li>
+								<a href="javascript:;" onclick="navi.move('#about-sec')">전동바이크</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#guide-sec')">이용안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#course-sec')">추천코스</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#contact-sec')">오시는길</a>
+							</li>
+							<li>
+								<a href="../reservation/index.html">예약확인</a>
+							</li>
+							<li>
+								<a href="../reservation/index.html">객실예약</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+
+			</div>
+		</header>
+
+		<div class="main cf" id="main">
+			<section class="about-sec cm-s" id="about-sec">
+				<h2><span class="container">ABOUT BIKE</span></h2>
+				<div class="inCont container">
+					<strong>고즈넉함.</strong>
+					<p class="p-fz-25 mt-30">고요한 백사장과 파도소리, 그렇게 그림같이 펼쳐진 해변의 풍경</p>
+					<p class="p-fz-18 mt-30">
+						<span class="f-bd">
+							해안도로를 따라 시원하게 달리면서 해변 뷰와 자연을 감상 할 수 있는 오션투유 전동바이크.<br>
+							동해에 오시면 가장 즐겁게 투어 할 수 있는 전동바이크를 적극 추천합니다.<br>
+						</span> 동해의 명물, 호미섬의 낭만이 있는 오션투유리조트에 위치하여 근방의 관광지와 뛰어난 접근성을 자랑합니다.<br> 다양한 관광코스와 강원도 고성만의 아름다운 풍경을 눈에 담으며 연인, 친구, 가족과 더욱 즐거운 여행을 즐길 수 있습니다.<br> 두 단계 보안장치로 더욱 안전하게 즐길 수 있는 전동바이크로 잊지 못할 즐거운 추억을 만들어 드립니다.<br>
+					</p>
+
+					<div class="imgBox cf">
+						<div class="smallBox cf">
+							<figure class="small-1"><img src="http://via.placeholder.com/250x190" alt="바이크이미지"></figure>
+							<figure class="small-2"><img src="http://via.placeholder.com/250x190" alt="바이크이미지"></figure>
+							<figure class="small-3">BIKE</figure>
+							<figure class="small-4"><img src="http://via.placeholder.com/250x190" alt="바이크이미지"></figure>
+						</div>
+						<figure class="big-1"><img src="http://via.placeholder.com/650x400" alt="바이크이미지"></figure>
+					</div>
+				</div>
+			</section>
+
+			<div class="contactPhone type-1">
+				<p class="p-tel"><span>010</span><span class="f-sm">&#8226;</span><span>4429</span><span class="f-sm">&#8226;</span><span>0250</span></p>
+				<p class="p-txt">“ 단체 이용관련 문의는 전용 번호로 연락 주시면 담당자가 빠르게 안내해 드리겠습니다 ”</p>
+				<p class="btnArea"><a href="#" class="a-btn">전동바이크 바로예약</a></p>
+			</div>
+
+			<section class="guide-sec cm-s" id="guide-sec">
+				<h2><span class="container">PLAY GUIDE</span></h2>
+				<div class="inCont container">
+					<strong>꼭 알아두기.</strong>
+					<p class="p-fz-18 mt-30">
+						<span class="f-bd">전동 바이크를 이용 하시기전에 한번 확인해주세요!</span>
+						<span class="s-row dot">전동 바이크 탑승 전, 운전면허증 확인은 필수 (현장 확인, 미 소지시 이용불가)</span>
+						<span class="s-row dot">보호장비 착용시에만 이용 가능</span>
+						<span class="s-row dot">국도 및 백사장 방향은 주행 불가합니다.</span>
+						<span class="s-row dot">대여자 본인 이외에, 제 3자의 운행은 불가합니다.</span>
+						<span class="s-row dot">우천 시 이용 불가하며, 결제금액은 전액 환불 처리 됩니다.</span>
+						<span class="s-row dot">사고 및 분실, 파손에 따른 책임은, 대여자 100% 본인 부담 처리됩니다.</span>
+					</p>
+
+					<ul class="guideList cf">
+						<li>
+							<p class="p-fz-25"><span class="f-bd">운영시간</span></p>
+							<p class="p-figure"><img src="../../img/contents/pic_01.png" alt="픽토그램"></p>
+							<p class="p-fz-18">
+								평일/주말<br> 09:00~20:00
+								<br> (20:00 까지 반납)
+							</p>
+						</li>
+						<li>
+							<p class="p-fz-25"><span class="f-bd">이용요금</span></p>
+							<p class="p-figure"><img src="../../img/contents/pic_02.png" alt="픽토그램"></p>
+							<p class="p-fz-18">
+								시간별로 상이하며,<br> 예약 페이지 참고
+							</p>
+						</li>
+						<li>
+							<p class="p-fz-25"><span class="f-bd">제공사항</span></p>
+							<p class="p-figure"><img src="../../img/contents/pic_03.png" alt="픽토그램"></p>
+							<p class="p-fz-18">
+								보호장비<br> 무상대여
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="contactPhone type-2">
+				<p class="p-tel">문의전화</p>
+				<p class="p-txt">“ 이용 시 사고 및 고장문제는 사무실로 전화 바랍니다. ”</p>
+				<p class="btnArea"><a href="#" class="a-btn"><span>010</span><span class="f-sm">&#8226;</span><span>4429</span><span class="f-sm">&#8226;</span><span>0250</span></a></p>
+			</div>
+
+			<section class="course-sec cm-s" id="course-sec">
+				<h2><span class="container">BIKE COURSE</span></h2>
+				<div class="inCont container">
+					<strong>추천투어코스.</strong>
+					<p class="p-fz-18 mt-30">
+						<span class="f-bd">
+							전동바이크 주변에 위치한 몇 가지 투어코스를 제안 드립니다.
+						</span> 해안도로를 따라 시원하게 달리면서 해변 뷰와 자연 광경을 감상 할 수 있는 전동바이크로 일탈을 즐기세요.
+					</p>
+
+					<div class="courseListArea" id="courseListArea">
+						<ul class="courseList cf">
+							<li class="on">
+								<img class="bgImg" src="../../img/contents/tourist_01.jpg" alt="투어코스">
+								<div class="d-bg"><span class="s-1"></span><span class="s-2"></span></div>
+								<div class="inTxt">
+									<h3 class="p-fz-25">송지호 코스</h3>
+									<p class="p-fz-18">왕복 10km / 약 1시간</p>
+									<img src="../../img/contents/downArr.png" alt="펼치기" class="dArr">
+								</div>
+							</li>
+							<li>
+								<img class="bgImg" src="../../img/contents/tourist_02.jpg" alt="투어코스">
+								<div class="d-bg"><span class="s-1"></span><span class="s-2"></span></div>
+								<div class="inTxt">
+									<h3 class="p-fz-25">고성왕곡마을 코스</h3>
+									<p class="p-fz-18">왕복 14km / 약 1시간 10분</p>
+									<img src="../../img/contents/downArr.png" alt="펼치기" class="dArr">
+								</div>
+							</li>
+							<li>
+								<img class="bgImg" src="../../img/contents/tourist_03.jpg" alt="투어코스">
+								<div class="d-bg">
+									<span class="s-1"></span><span class="s-2"></span>
+								</div>
+								<div class="inTxt">
+									<h3 class="p-fz-25">천학정 코스</h3>
+									<p class="p-fz-18">왕복 12km / 약 1시간 10분</p>
+									<img src="../../img/contents/downArr.png" alt="펼치기" class="dArr">
+								</div>
+							</li>
+							<li>
+								<img class="bgImg" src="../../img/contents/tourist_04.jpg" alt="투어코스">
+								<div class="d-bg">
+									<span class="s-1"></span><span class="s-2"></span>
+								</div>
+								<div class="inTxt">
+									<h3 class="p-fz-25">해안도로 코스</h3>
+									<p class="p-fz-18">왕복 16km / 약 1시간 20분</p>
+									<img src="../../img/contents/downArr.png" alt="펼치기" class="dArr">
+								</div>
+							</li>
+						</ul>
+						<ul class="mapList cf">
+							<li class="nth-1 on">
+								<p class="p-fz-25">송지호 코스</p>
+								<p class="p-fz-18">
+									<span class="f-bd">
+										1977년 국민관광지로 지정
+									</span> 바다와 연이어 있어 도미 전어 등의<span class="show-md"></span> 바닷물고기와 잉어 등의 민물고기가 함께<span class="show-md"></span> 서식하며, 맑은 호수와 송림이 울창하다.
+								</p>
+								<p class="p-fz-18 f-bd p-bottom">오션투유리조트 > 봉수대 해수욕장 > 송지호 철새관망타워</p>
+							</li>
+							<li class="nth-2">
+								<p class="p-fz-25">고성 왕곡마을 코스</p>
+								<p class="p-fz-18">
+									<span class="f-bd">
+										전통의 향기를 느낄 수 있는 곳<span class="show-md"></span> 고성 왕곡로 여러분을 초대합니다.
+									</span>
+									고성군은 백두대간과 동해를 끼고 남북으로<span class="show-md"></span> 길게 펼쳐진 지형으로 긴 해안과 산악분포가<span class="show-md"></span> 특징이며 특히 금강산과 설악산 등 빼어난<span class="show-md"></span> 산세와 검푸른 동해바다를 품고 있다.
+								</p>
+								<p class="p-fz-18 f-bd p-bottom">오션투유리조트 > 고성 어명기가옥 > 고성 왕곡마을</p>
+							</li>
+							<li class="nth-3">
+								<p class="p-fz-25">천학정 코스</p>
+								<p class="p-fz-18">
+									<span class="f-bd">
+										교암리 마을 앞 조그만 산, 가파른 해안 절벽
+									</span> 1931년 지방유지 한치응, 최순문, 김성운 등이<span class="show-md"></span> 뜻을 모아 정면 2칸, 측면 2칸, 겹처마 팔작지붕의<span class="show-md"></span> 벽이 없는 단층 건물로 건립하였다.<span class="show-md"></span> 정자의 정면에는 ‘천학정’ 현판이 걸려 있고,<span class="show-md"></span> 내부에는 ‘천학정기’와 ‘천학정 시판’이 걸려 있다.
+								</p>
+								<p class="p-fz-18 f-bd p-bottom">
+									오션투유리조트 > 삼포 해수욕장 > 자작도 해수욕장 ><span class="show-md"></span> 백도 해수욕장 > 문암해변 > 교암리 해수욕장 > 천학정(2경)
+								</p>
+							</li>
+							<li class="nth-4">
+								<p class="p-fz-25">해안도로 코스</p>
+								<p class="p-fz-18">
+									<span class="f-bd">
+										해안도로의 낭만,<span class="show-md"></span> 넓은 바다를 바라보며 달리는 코스
+									</span>
+									드넓은 바다를 바라보며 달리는 바이크<span class="show-md"></span> 색다른 힐링을 받고싶으시다면,<span class="show-md"></span> 당연 전동바이크 해안도로 코스를 이용하세요.
+								</p>
+								<p class="p-fz-18 f-bd p-bottom">
+									오션투유리조트 > 삼포 해수욕장 > 봉수대 해수욕장 ><span class="show-md"></span> 송지호 해수욕장 > 가진 해수욕장
+								</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</section>
+
+			<div class="contactPhone type-3">
+				<p class="p-tel">문의전화</p>
+				<p class="p-txt">“ 이용 시 사고 및 고장문제는 사무실로 전화 바랍니다. ”</p>
+				<p class="btnArea"><a href="#" class="a-btn"><span>010</span><span class="f-sm">&#8226;</span><span>4429</span><span class="f-sm">&#8226;</span><span>0250</span></a></p>
+			</div>
+
+			<section class="contact-sec cm-s" id="contact-sec">
+				<h2><span class="container">CONTACT US</span></h2>
+				<div class="inCont container">
+					<strong>어서오세요.</strong>
+					<p class="p-fz-25 mt-30">강원 고성군 죽왕면 삼포해변길 9 오션투유리조트 1층</p>
+					<p class="p-fz-18 mt-30 f-bd">자가차량 이용시</p>
+					<p class="p-fz-18">네비게이션 주소 또는 오션투유 리조트 입력</p>
+					<p class="p-fz-18 mt-30 f-bd">대중교통 이용시</p>
+					<p class="p-fz-18 dot">간성 시외버스터미널 하차시 - 신안리 정류장에서 1번, 1-1버스 승차, 삼포리정류장에서 하차, 105m 이동</p>
+					<p class="p-fz-18 dot">속초 시외버스터미널 하차시 - 한국전력 정류장에서 1번, 1-1버스 승차, 삼포리정류장에서 하차, 105m 이동</p>
+					<p class="p-fz-18 dot">속초 고속버스터미널 하차시 - 속초 고속버스터미널 정류장 1번, 1-1버스 승차, 삼포리정류장에서 하차, 105m 이동</p>
+
+
+					<!-- * Daum 지도 - 지도퍼가기 -->
+					<!-- 1. 지도 노드 -->
+					<div class="mapBox">
+						<div id="daumRoughmapContainer1518058954067" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+					</div>
+
+					<!--
+						2. 설치 스크립트
+						* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+					-->
+					<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+					<!-- 3. 실행 스크립트 -->
+					<script charset="UTF-8">
+						new daum.roughmap.Lander({
+							"timestamp": "1518058954067",
+							"key": "mq6g",
+							"mapHeight": "400"
+						}).render();
+					</script>
+				</div>
+
+			</section>
+
+		</div>
+
+		<div class="clr"></div>
+		<footer class="footer">
+			<div class="container">
+
+				<div class="flt-1 clr hidden-xs">
+					<img class="f-logo" src="../../img/fLogo.png" alt="전동바이크">
+				</div>
+
+				<div class="flt-3 clr hidden-xs">
+					단체이용 및 전화문의<br> 010 · 4429 · 0250
+					<span class="mt-1">(주중/주말 20시까지)</span>
+				</div>
+
+				<div class="flt-box">
+					<ul class="f_menu">
+						<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .term-wrap').show();">이용약관</a></li>
+						<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .privacy-wrap').show();">개인정보처리방침</a></li>
+					</ul>
+
+					<div class="flt-1 clr hidden-md">
+						<img class="f-logo" src="../../img/fLogo.png" alt="전동바이크">
+					</div>
+					<div class="flt-3 clr hidden-md">
+						단체이용 및 전화문의 010 · 4429 · 0250<br>
+						<span class="mt-1">(주중/주말 20시 까지)</span>
+					</div>
+					<div class="flt-2 clr">
+						<address>
+							<p class="nth-1">
+								오션투유리조트 설악비치 호텔앤콘도 전동바이크<br>
+								대표자 : 박기범<br>
+								주소 : 강원 고성군 죽왕면 삼포해변길 9<br>
+								사업자등록번호 : 332-85-00016 
+					<!--							<a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2017452030130200193&pageUnit=10&searchCnd=bup_nm&searchKrwd=%EB%B9%84%EC%97%90%EC%8A%A4%ED%88%AC%EC%96%B4%EC%95%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&pageIndex=1" target="_blank" class="a-buisness">사업자정보확인 <span class="ic-rArrow rArrow"></span></a>-->
+								<br>
+								통신판매업 : 제 2009-4290040-30-2-0033호 <span class="i-l"></span> 메일 : <br>
+								
+								<small>COPYRIGHT ⓒ (주)오션투유리조트 설악비치 호텔앤콘도 전동바이크 ALL RIGHT RESERVED</small>
+							</p>
+						</address>
+					</div>
+				</div>
+
+
+			</div>
+		</footer>
+
+
+	</div>
+
+</body>
+
+</html>

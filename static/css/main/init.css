@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.header {position: absolute; top: 0; left: 0; width: 100%;}
+.header .hd-area .glb, .header .hd-area .gLogo {background: none; box-shadow: none;}
+.header .hd-area .glb {position: relative;}
+.header .hd-area .gNav .gnb > li > a {color: #fff;}
+.footer {margin-top: 0; background: #0d0d0d;}
+
+.mainBg {position: relative; width: 100%; height: 100%;}
+.mainBg .bgBox {position: relative; width: 100%; height: 100%; overflow: hidden;}
+.mainBg .bgBox .bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; transition: all 2s; z-index: 0; opacity: 1;}
+.mainBg .bgBox .bg.active {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	z-index: 1;
+	opacity: 0;
+}
+.mainBg .bgBox .bg-nth-1 {background: url(../../../img/main/main_01.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgBox .bg-nth-2 {background: url(../../../img/main/main_02.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgBox .bg-nth-3 {background: url(../../../img/main/main_03.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgPtn {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../../../img/main/ptn.png) repeat; z-index: 1;}
+.mainBg .inTitle {position: absolute; top: 50%; left: 50%; margin-left: -242px; margin-top: -163px; z-index: 1;}
